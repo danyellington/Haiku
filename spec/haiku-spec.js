@@ -1,7 +1,10 @@
+
+import {Haiku} from './../js/haiku.js';
+
 describe('haiku', function(){
 it ('should test if word returns', function(){
-  var haiku = new haiku(word)
-  expect(word).toEqual(1)
+  var words = new Haiku("dog");
+  expect(words).toEqual(words);
 });
 
   // it ('should test how many syllabals are in a word', function() {

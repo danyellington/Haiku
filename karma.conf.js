@@ -12,6 +12,10 @@ module.exports = function(config) {
       'js/*.js': [ 'browserify'],
       'spec/*.js': ['browserify']
     },
+    browserify: {
+     debug: true,
+     transform: [ [ 'babelify', {presets: ["es2015"]} ] ]
+   },
     plugins: [
       'karma-jquery',
       'karma-browserify',
