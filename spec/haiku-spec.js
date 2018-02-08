@@ -3,8 +3,13 @@ import {Haiku} from './../js/haiku.js';
 
 describe('haiku', function(){
 it ('should test if word returns', function(){
-  var words = new Haiku("dog");
-  expect(words).toEqual(words);
+  let word = new Haiku("dog");
+  expect(word).toEqual(word);
+});
+
+it ('should test if word returns lower-case', function(){
+  let word = new Haiku("DOG");
+  expect(word).toEqual(word);
 });
 
   // it ('should test how many syllabals are in a word', function() {

@@ -42,6 +42,7 @@ gulp.task('jsBrowserify', ['concatInterface'], function() {
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'))
+  });
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
     .pipe(jshint())

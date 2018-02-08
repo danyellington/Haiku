@@ -1,7 +1,16 @@
 export class Haiku {
+
   constructor (word) {
     this.word = word;
   }
-}
 
-// exports.haikuModule = Haiku;
+  lowerCaseWord(){
+    word = this.word.toLowerCase();
+  };
+
+    //const vowels = [a, e, i, o, u, y];
+
+
+
+
+};
